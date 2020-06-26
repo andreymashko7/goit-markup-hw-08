@@ -1,0 +1,187 @@
+// Футер
+footer {
+  color: $primary-white-color;
+  background-color: #2f303a;
+}
+
+// Логотип в футере
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: $primary-white-color;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: $secondary-font-weight;
+  font-size: 22px;
+  line-height: 1.2;
+
+  & > span {
+    color: $accent-color;
+  }
+}
+
+// Адреса в футере
+
+.box-footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 28px;
+
+  .contacts .contacts-text {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 9px;
+
+    font-style: normal;
+    font-weight: $primary-font-weight;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.link-social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+  fill: $primary-white-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.contacts .contacts-link,
+.contacts .tell-link {
+  display: inline-block;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  text-decoration: none;
+  font-weight: $primary-font-weight;
+  font-size: 14px;
+  line-height: 1.71;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contacts-link.footer {
+  margin-bottom: 9px;
+}
+
+// Соцсети в футере
+
+.social.list {
+  display: flex;
+}
+
+.social .item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.footer-text {
+  display: block;
+  margin-bottom: 21px;
+
+  font-weight: $secondary-font-weight;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+// подписка в футере
+
+.footer-flex {
+  display: inline-flex;
+}
+
+.button-text {
+  margin-bottom: 21px;
+  display: block;
+  font-weight: $secondary-font-weight;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  font-weight: $primary-font-weight;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 15px 0px 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+
+  &:focus {
+    color: $primary-white-color;
+  }
+}
+
+// кнопка подписаться
+
+.button-second {
+  display: flex;
+  font-family: inherit;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 29px;
+  border: 0;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    color: $accent-color;
+    background-color: $primary-white-color;
+  }
+}
+
+// Стили для иконки кнопки в футере
+
+.air-icon {
+  margin-left: 10px;
+  fill: $primary-white-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .button-second:hover &,
+  .button-second:focus & {
+    fill: $accent-color;
+  }
+}

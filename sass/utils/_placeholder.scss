@@ -1,0 +1,20 @@
+// плейсхолдер карточка работников
+
+%team {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 1.19;
+
+  .team-name {
+    @extend %team;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  .team-work {
+    @extend %team;
+    margin-bottom: 16px;
+    color: $secondary-text-color;
+    font-weight: 400;
+  }
+}
