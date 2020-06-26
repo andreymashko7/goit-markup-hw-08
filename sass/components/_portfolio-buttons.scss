@@ -1,22 +1,22 @@
 // кнопки в портфолио
 
 .main-page {
-  border-top: 94px;
+  // border-top: 94px;
   border: 1px solid #ececec;
 
   .container.menu {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
   }
 }
 
 .list.filtr {
-  display: flex;
+  // display: flex;
   justify-content: center;
 }
 
 .filtr .item {
-  margin-right: 8px;
+  // margin-right: 8px;
 
   &:last-child {
     margin-right: 0;
@@ -24,7 +24,7 @@
 }
 
 .main-page .btn-type {
-  padding: 6px 22px;
+  // padding: 6px 22px;
 
   color: $primary-text-color;
   background-color: #f5f4fa;

@@ -1,14 +1,14 @@
 // Секция Преимущества
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
 
   border-bottom: 1px solid #ececec;
 
   & .section-title {
     margin-top: 0;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 
     font-weight: $secondary-font-weight;
     font-size: 14px;
@@ -28,15 +28,15 @@
 }
 
 .list.information {
-  display: flex;
+  // display: flex;
 }
 
 .icon-box {
   display: flex;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
-  width: 270px;
-  height: 120px;
+  // width: 270px;
+  // height: 120px;
 
   background: #f5f4fa;
 
@@ -46,11 +46,11 @@
 }
 
 .information .item-box {
-  margin-right: 30px;
-  max-width: 270px;
+  // margin-right: 30px;
+  // max-width: 270px;
 
   &:last-child {
-    margin-right: 0;
+    // margin-right: 0;
   }
 }
 
@@ -61,11 +61,11 @@
 }
 
 .list.exampls-box {
-  display: flex;
+  // display: flex;
 }
 
 .exampls .item {
-  margin-right: 30px;
+  // margin-right: 30px;
 
   &:last-child {
     margin-right: 0;
@@ -73,12 +73,13 @@
 }
 
 .exampls {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: none;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
 
   &-title {
     margin-top: 0;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 
     font-weight: $secondary-font-weight;
     font-size: 36px;
@@ -91,8 +92,8 @@
     bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 27px 0px 27px 0px;
-    width: 370px;
+    // padding: 27px 0px 27px 0px;
+    // width: 370px;
 
     color: $primary-white-color;
     background: rgba(47, 48, 58, 0.8);

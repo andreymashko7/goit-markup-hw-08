@@ -7,8 +7,8 @@ footer {
 // Логотип в футере
 
 .logo-footer {
-  display: inline-block;
-  margin-bottom: 10px;
+  // display: inline-block;
+  // margin-bottom: 10px;
   color: $primary-white-color;
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -24,16 +24,16 @@ footer {
 // Адреса в футере
 
 .box-footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding-top: 48px;
-  padding-bottom: 28px;
+  // display: flex;
+  // align-items: baseline;
+  // justify-content: space-between;
+  // padding-top: 48px;
+  // padding-bottom: 28px;
 
   .contacts .contacts-text {
-    display: inline-block;
+    // display: inline-block;
     margin-top: 0;
-    margin-bottom: 9px;
+    // margin-bottom: 9px;
 
     font-style: normal;
     font-weight: $primary-font-weight;
@@ -43,7 +43,7 @@ footer {
 }
 
 .link-social {
-  display: flex;
+  // display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -61,7 +61,7 @@ footer {
 
 .contacts .contacts-link,
 .contacts .tell-link {
-  display: inline-block;
+  // display: inline-block;
 
   color: rgba(255, 255, 255, 0.6);
 
@@ -79,17 +79,17 @@ footer {
 }
 
 .contacts-link.footer {
-  margin-bottom: 9px;
+  // margin-bottom: 9px;
 }
 
 // Соцсети в футере
 
 .social.list {
-  display: flex;
+  // display: flex;
 }
 
 .social .item {
-  margin-right: 10px;
+  // margin-right: 10px;
 
   &:last-child {
     margin-right: 0px;
@@ -98,7 +98,7 @@ footer {
 
 .footer-text {
   display: block;
-  margin-bottom: 21px;
+  // margin-bottom: 21px;
 
   font-weight: $secondary-font-weight;
   font-size: 14px;
@@ -109,11 +109,11 @@ footer {
 // подписка в футере
 
 .footer-flex {
-  display: inline-flex;
+  // display: inline-flex;
 }
 
 .button-text {
-  margin-bottom: 21px;
+  // margin-bottom: 21px;
   display: block;
   font-weight: $secondary-font-weight;
   font-size: 14px;
@@ -124,7 +124,7 @@ footer {
 .footer-input {
   width: 358px;
   height: 50px;
-  margin-right: 12px;
+  // margin-right: 12px;
   font-weight: $primary-font-weight;
   font-size: 16px;
   line-height: 1.25;
@@ -143,7 +143,7 @@ footer {
 // кнопка подписаться
 
 .button-second {
-  display: flex;
+  // display: flex;
   font-family: inherit;
   min-width: 200px;
   border-radius: 4px;
@@ -176,7 +176,7 @@ footer {
 // Стили для иконки кнопки в футере
 
 .air-icon {
-  margin-left: 10px;
+  // margin-left: 10px;
   fill: $primary-white-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

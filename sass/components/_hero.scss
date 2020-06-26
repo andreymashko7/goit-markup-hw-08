@@ -5,8 +5,8 @@
   margin-left: auto;
   margin-right: auto;
 
-  height: 600px;
-  max-width: 1600px;
+  // height: 600px;
+  max-width: 480px;
 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
@@ -23,12 +23,12 @@
 // Заголовок для героя
 
 .container-hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
 
-  max-width: 690px;
+  // max-width: 690px;
 }
 
 .hero-title {
@@ -47,10 +47,10 @@
 // Правило для кнопки в блоке Герой
 
 .hero-button {
-  display: inline-block;
+  // display: inline-block;
   padding: 10px 32px;
 
-  min-width: 200px;
+  // min-width: 200px;
 
   color: $primary-white-color;
   background-color: $accent-color;

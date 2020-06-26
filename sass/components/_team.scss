@@ -1,13 +1,13 @@
 // Наша команда (карточки работников)
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
   background: #f5f4fa;
 
   & .team-title {
     margin-top: 0;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 
     font-weight: $secondary-font-weight;
     font-size: 36px;
@@ -17,7 +17,7 @@
 }
 
 .list.workers {
-  display: flex;
+  // display: flex;
   text-align: center;
 
   .card-shadow {
@@ -39,11 +39,11 @@
 }
 
 .person-box {
-  padding: 30px 32px 24px;
+  // padding: 30px 32px 24px;
 }
 
 .team .item {
-  margin-right: 30px;
+  // margin-right: 30px;
   overflow: hidden;
 
   &:last-child {
@@ -52,7 +52,7 @@
 }
 
 .list .social {
-  display: flex;
+  // display: flex;
   margin-bottom: 0;
   justify-content: center;
 }
