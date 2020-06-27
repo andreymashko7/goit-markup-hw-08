@@ -1,15 +1,17 @@
 // Секция Преимущества
 
 .section {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   border-bottom: 1px solid #ececec;
 
   & .section-title {
+    display: flex;
     margin-top: 0;
-    // margin-bottom: 10px;
+    margin-bottom: 10px;
 
+    justify-content: center;
     font-weight: $secondary-font-weight;
     font-size: 14px;
     line-height: 1.14;
@@ -18,12 +20,17 @@
 
   & .section-text {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+    // margin-bottom: 0;
 
     color: $secondary-text-color;
 
     font-size: 14px;
     line-height: 1.71;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -33,10 +40,10 @@
 
 .icon-box {
   display: flex;
-  // margin-bottom: 30px;
+  margin-bottom: 30px;
 
-  // width: 270px;
-  // height: 120px;
+  width: 450px;
+  height: 120px;
 
   background: #f5f4fa;
 

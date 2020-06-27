@@ -6,6 +6,7 @@
 
   & .clients-title {
     margin-top: 0;
+    margin-bottom: 30px;
     // margin-bottom: 50px;
 
     font-weight: $secondary-font-weight;
@@ -16,7 +17,8 @@
 }
 
 .list.company {
-  // display: flex;
+  display: flex;
+  flex-wrap: wrap;
 
   // @media screen and (min-width: 480px) {
   //   display: flex;
@@ -24,7 +26,16 @@
   // }
 }
 
+.clients .item:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+
+.clients .item:nth-child(-n + 4) {
+  margin-bottom: 30px;
+}
+
 .clients .item {
+  // margin-bottom: 30px;
   // margin-right: 30px;
 
   // @media screen and (min-width: 480px) {
@@ -36,14 +47,14 @@
   // }
 
   &:last-child {
-    margin-right: 0;
+    // margin-right: 0;
   }
 }
 
 .company-logo {
   // display: flex;
-  display: block;
-  width: 170px;
+  display: inline-flex;
+  width: 210px;
   height: 90px;
 
   fill: #afb1b8;
