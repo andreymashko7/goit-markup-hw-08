@@ -24,7 +24,6 @@ footer {
 // Адреса в футере
 
 .box-footer {
-  // display: flex;
   // align-items: baseline;
   // justify-content: space-between;
   // padding-top: 48px;
@@ -85,7 +84,7 @@ footer {
 // Соцсети в футере
 
 .social.list {
-  // display: flex;
+  display: flex;
 }
 
 .social .item {
@@ -97,7 +96,7 @@ footer {
 }
 
 .footer-text {
-  display: block;
+  // display: block;
   // margin-bottom: 21px;
 
   font-weight: $secondary-font-weight;
@@ -114,7 +113,7 @@ footer {
 
 .button-text {
   // margin-bottom: 21px;
-  display: block;
+  // display: block;
   font-weight: $secondary-font-weight;
   font-size: 14px;
   line-height: 1.14;
