@@ -19,34 +19,11 @@
 
 // Навигация в хедере
 
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-
-  & .icon-cross {
-    display: none;
-  }
-
-  &.is-open .icon-cross {
-    display: block;
-  }
-  &.is-open .icon-menu-nav {
-    display: none;
-  }
-
-  @media screen and (min-width: '768px') {
-    display: none;
-  }
+.page-header {
+  position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
-.page-header,
-.main-nav {
-  // display: flex;
-  // align-items: center;
-}
 .main-nav {
   display: flex;
   align-items: center;
@@ -65,16 +42,15 @@
   }
 }
 
-.page-header {
-  position: relative;
-  border-bottom: 1px solid #ececec;
-}
-
 .main-nav .menu-container {
   background-color: #fff;
   z-index: 2;
   text-align: center;
   font-size: 20px;
+
+  &.is-open {
+    display: block;
+  }
 
   @media screen and (max-width: 767px) {
     padding-top: 60px;
@@ -86,44 +62,22 @@
     width: 100%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 4px 8px rgba(0, 0, 0, 0.04);
-
-    @media screen and (min-width: 768px) {
-      display: flex;
-    }
   }
-}
 
-.main-nav .menu-container.is-open {
-  display: block;
-
-  @media screen and (max-width: 767px) {
-    display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
-}
-
-.icon-button {
-  color: #212121;
-
-  .menu-button:hover &,
-  .menu-button:focus & {
-    fill: $accent-color;
-  }
-}
-
-.site-nav,
-.auth-nav {
-  // display: inline-flex;
-}
-
-.site-nav.list {
-  // margin-left: 86px;
 }
 
 .site-nav .item {
-  margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
 
-  @media screen and(min-width:"768px") {
+  @media screen and(min-width: 768px) {
     margin-right: 50px;
+    text-align: center;
+    justify-content: center;
 
     &:last-child {
       margin-right: 0;
@@ -134,54 +88,43 @@
 .site-nav,
 .auth-nav {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.17;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
+
 .site-nav {
   @media screen and (min-width: 768px) {
     margin-left: 81px;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
+    line-height: 1.14;
   }
 
-  @media screen and(min-width:"1200px") {
+  @media screen and(min-width: 1200px) {
     margin-left: 85px;
   }
 }
 
-.auth-nav {
-  @media screen and (min-width: 768px) {
-    flex-wrap: wrap;
-    margin-left: 84px;
-
-    @media screen and (min-width: 1200px) {
-      margin-left: 305px;
-    }
-  }
-}
-
 .site-nav .link {
-  // display: inline-block;
-  // position: relative;
-  // display: block;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
+  position: relative;
+  display: inline-block;
 
   color: $primary-text-color;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   &:hover,
   &:focus {
@@ -190,40 +133,51 @@
   }
 }
 
-// Правило для текущего подчеркивания
-
-.link.current {
-  position: relative;
-  color: $accent-color;
-}
-
-.link.current::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-
-  height: 4px;
-  width: 100%;
-
-  background-color: $accent-color;
-  border-radius: 2px;
-}
-
-// Контакты в хедере
+// контакты в хедере
 
 .auth-nav {
-  // margin-left: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 767px) and(max-width: 1199px) {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin-left: 84px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+    margin-left: 305px;
+  }
 }
 
 .auth-nav .item + .item {
-  // margin-left: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
 }
 
 .auth-nav .item {
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
   &:not(:last-child) {
-    margin-bottom: 16px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+  }
+  &:not(:last-child) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -237,16 +191,40 @@
   // align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
   &:hover,
   &:focus {
     color: $accent-color;
     fill: $accent-color;
     cursor: pointer;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Правило для текущего подчеркивания
+
+.link.current {
+  color: $accent-color;
+}
+
+.link.current::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 4px;
+  width: 100%;
+
+  background-color: $accent-color;
+  border-radius: 2px;
+
+  @media screen and (min-width: 768px) {
+    bottom: 0;
   }
 }
 
@@ -281,5 +259,38 @@
     color: $accent-color;
     fill: $accent-color;
     cursor: pointer;
+  }
+}
+// иконка кнопка меню-закрыть
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .icon-cross {
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+  &.is-open .icon-menu-nav {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.icon-button {
+  color: #212121;
+
+  .menu-button:hover &,
+  .menu-button:focus & {
+    fill: $accent-color;
   }
 }
