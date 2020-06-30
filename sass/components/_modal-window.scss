@@ -255,6 +255,14 @@ textarea {
   }
 }
 
+.checkbox-policy {
+  @media screen and (max-width: 1199px) {
+    display: inline-flex;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
 .policy {
   color: $accent-color;
 }
