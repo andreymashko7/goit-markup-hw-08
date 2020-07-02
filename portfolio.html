@@ -61,7 +61,7 @@
     <!-- кнопки -->
     <main>
       <section class="main-page">
-        <div class="container menu">
+        <div class="container">
           <h1 class="visually-hidden">Наши работы</h1>
           <div class="filtr">
             <ul class="list filtr">
@@ -91,9 +91,14 @@
                 <div class="product-card">
                   <img
                     class="card-images"
-                    src="./images/img-1.jpg"
+                    srcset="
+                  ./images/img(8).jpg    1x,
+                  ./images/img@2x(8).jpg 2x,
+                  ./images/img@3x(8).jpg 3x
+                "
+                src="./images/img(8).jpg"
                     alt="картинка ноутбука"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="group-text">
@@ -114,9 +119,14 @@
                 <div class="product-card">
                   <img
                     class="card-images"
-                    src="./images/img-2.jpg"
+                    srcset="
+                  ./images/img(9).jpg    1x,
+                  ./images/img@2x(9).jpg 2x,
+                  ./images/img@3x(9).jpg 3x
+                "
+                src="./images/img(9).jpg"
                     alt="постер для баскетбола"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="group-text">
@@ -137,9 +147,14 @@
                 <div class="product-card">
                   <img
                     class="card-images"
-                    src="./images/img-3.jpg"
+                    srcset="
+                  ./images/img(10).jpg    1x,
+                  ./images/img@2x(10).jpg 2x,
+                  ./images/img@3x(10).jpg 3x
+                "
+                src="./images/img(10).jpg"
                     alt="вывеска для ресторана"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="group-text">
@@ -160,9 +175,14 @@
                 <div class="product-card">
                   <img
                     class="card-images"
-                    src="./images/img-4.jpg"
+                    srcset="
+                  ./images/img(11).jpg    1x,
+                  ./images/img@2x(11).jpg 2x,
+                  ./images/img@3x(11).jpg 3x
+                "
+                src="./images/img(11).jpg"
                     alt="Фото наушники"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="group-text">
@@ -183,9 +203,14 @@
                 <div class="product-card">
                   <img
                     class="card-images"
-                    src="./images/img-5.jpg"
+                    srcset="
+                  ./images/img(12).jpg    1x,
+                  ./images/img@2x(12).jpg 2x,
+                  ./images/img@3x(12).jpg 3x
+                "
+                src="./images/img(12).jpg"
                     alt="Картинка коробки"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="group-text">
@@ -206,9 +231,14 @@
                 <div class="product-card">
                   <img
                     class="card-images"
-                    src="./images/img-6.jpg"
+                    srcset="
+                  ./images/img(7).jpg    1x,
+                  ./images/img@2x(7).jpg 2x,
+                  ./images/img@3x(7).jpg 3x
+                "
+                src="./images/img(7).jpg"
                     alt="фото компьютера"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="group-text">
@@ -229,9 +259,14 @@
                 <div class="product-card">
                   <img
                     class="card-images"
-                    src="./images/img-7.jpg"
+                    srcset="
+                  ./images/img(13).jpg    1x,
+                  ./images/img@2x(13).jpg 2x,
+                  ./images/img@3x(13).jpg 3x
+                "
+                src="./images/img(13).jpg"
                     alt="книга"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="group-text">
@@ -252,9 +287,14 @@
                 <div class="product-card">
                   <img
                     class="card-images"
-                    src="./images/img-8.jpg"
+                    srcset="
+                  ./images/img(14).jpg    1x,
+                  ./images/img@2x(14).jpg 2x,
+                  ./images/img@3x(14).jpg 3x
+                "
+                src="./images/img(14).jpg"
                     alt="рекламная бирка"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="group-text">
@@ -275,9 +315,14 @@
                 <div class="product-card">
                   <img
                     class="card-images"
-                    src="./images/img-9.jpg"
+                    srcset="
+                  ./images/img(5).jpg    1x,
+                  ./images/img@2x(5).jpg 2x,
+                  ./images/img@3x(5).jpg 3x
+                "
+                src="./images/img(5).jpg"
                     alt="картинка ноутбук"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="group-text">
@@ -295,96 +340,74 @@
           </ul>
         </div>
       </section>
-    </>
+    </main>
 
     <!-- футер -->
     <footer>
       <div class="box-footer container">
-        <div class="adress-footer">
-          <div class="logo-title">
-            <a href="./index.html" class="logo-footer"
-              ><span>Web </span>Studio</a
-            >
+        <div class="footer-tablet">
+          <div class="adress-footer">
+            <div class="logo-title">
+              <a href="./index.html" class="logo-footer"><span>Web </span>Studio</a>
+            </div>
+            <address class="contacts">
+              <ul class="list adress-down">
+                <li class="item">
+                  <p class="contacts-text">г. Киев, пр-т Леси Украинки, 26</p>
+                </li>
+                <li class="item">
+                  <a href="mailto:info@devstudio.com" class="contacts-link footer">info@devstudio.com</a>
+                </li>
+                <li class="item">
+                  <a href="tel:380991111111" class="tell-link">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
           </div>
-          <address class="contacts">
-            <ul class="list">
-              <li>
-                <p class="contacts-text">г. Киев, пр-т Леси Украинки, 26</p>
+    
+          <div class="footer-social">
+            <b class="footer-text">присоединяйтесь</b>
+            <ul class="social list">
+              <li class="item">
+                <a href="https://www.instagram.com/" class="link-social" aria-label="ссылка на инстаграм">
+                  <svg class="icon-insta" width="20" height="20">
+                    <use href="./images/sprite.svg#instagram2"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="mailto:info@devstudio.com" class="contacts-link footer"
-                  >info@devstudio.com</a
-                >
+              <li class="item">
+                <a href="https://twitter.com/" class="link-social" aria-label="ссылка на твитер"><svg class="icon-twit"
+                    width="20" height="20">
+                    <use href="./images/sprite.svg#twitter1"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="tel:380991111111" class="tell-link"
-                  >+38 099 111 11 11</a
-                >
+              <li class="item">
+                <a href="https://www.facebook.com/" class="link-social" aria-label="ссылка на фейсбук"><svg
+                    class="icon-facebook" width="20" height="20">
+                    <use href="./images/sprite.svg#facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="https://www.linkedin.com/" class="link-social" aria-label="ссылка на линкидин"><svg
+                    class="icon-linkidn" width="20" height="20">
+                    <use href="./images/sprite.svg#linkedin1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-
-        <div class="footer-social">
-          <b class="footer-text">присоединяйтесь</b>
-          <ul class="social list">
-            <li class="item">
-              <a
-                href="https://www.instagram.com/"
-                class="link-social"
-                aria-label="ссылка на инстаграм"
-              >
-                <svg class="icon-insta" width="20" height="20">
-                  <use href="./images/sprite.svg#instagram2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a
-                href="https://twitter.com/"
-                class="link-social"
-                aria-label="ссылка на твитер"
-                ><svg class="icon-twit" width="20" height="16">
-                  <use href="./images/sprite.svg#twitter1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a
-                href="https://www.facebook.com/"
-                class="link-social"
-                aria-label="ссылка на фейсбук"
-                ><svg class="icon-facebook" width="20" height="20">
-                  <use href="./images/sprite.svg#facebook1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a
-                href="https://www.linkedin.com/"
-                class="link-social"
-                aria-label="ссылка на линкидин"
-                ><svg class="icon-linkidn" width="20" height="20">
-                  <use href="./images/sprite.svg#linkedin1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
+    
         <div class="box-button">
           <b class="button-text">Подпишитесь на рассылку</b>
           <div class="footer-flex">
             <form class="footer-form" autocomplete="off">
-              <label class="footer-label"
-                ><input
-                  type="email"
-                  class="footer-input"
-                  name="text"
-                  placeholder="E-mail"
-              /></label>
+              <label class="footer-label"><input type="email" class="footer-input" name="text"
+                  placeholder="E-mail" /></label>
             </form>
-            <button type="button" class="button-second">
+            <button type="submit" class="button-second">
               Подписаться
               <svg class="air-icon" width="24" height="24">
                 <use href="./images/sprite.svg#airbus"></use>
@@ -396,5 +419,6 @@
     </footer>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
-  </body>
-</html>
+    </body>
+    
+    </html>

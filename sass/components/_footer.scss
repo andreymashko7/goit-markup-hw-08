@@ -2,6 +2,12 @@
 footer {
   color: $primary-white-color;
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 // Логотип в футере
@@ -13,48 +19,82 @@ footer {
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: $secondary-font-weight;
-  font-size: 22px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
 
   & > span {
     color: $accent-color;
   }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.logo-title {
+  margin-bottom: 20px;
 }
 
 // Адреса в футере
 
+.footer-tablet {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.adress-down {
+  @media screen and(max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+.adress-down .item {
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.adress-footer {
+  @media screen and (min-width: 1200px) {
+    margin-right: 69px;
+  }
+}
+
 .box-footer {
-  // align-items: baseline;
-  // justify-content: space-between;
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
   // padding-top: 48px;
   // padding-bottom: 28px;
 
   .contacts .contacts-text {
     // display: inline-block;
-    margin-top: 0;
+    margin: 0;
     // margin-bottom: 9px;
 
     font-style: normal;
     font-weight: $primary-font-weight;
     font-size: 14px;
     line-height: 1.71;
-  }
-}
-
-.link-social {
-  // display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  justify-content: center;
-  align-items: center;
-  fill: $primary-white-color;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
   }
 }
 
@@ -77,27 +117,47 @@ footer {
   }
 }
 
-.contacts-link.footer {
-  // margin-bottom: 9px;
-}
-
 // Соцсети в футере
 
 .social.list {
   display: flex;
+  // justify-content: center;
+
+  @media screen and(max-width: 767px) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .social .item {
-  // margin-right: 10px;
+  margin-right: 10px;
 
   &:last-child {
     margin-right: 0px;
   }
 }
 
-.footer-text {
+.link-social {
+  display: flex;
   // display: block;
-  // margin-bottom: 21px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+  fill: $primary-white-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.footer-text {
+  display: block;
+  margin-bottom: 20px;
 
   font-weight: $secondary-font-weight;
   font-size: 14px;
@@ -108,12 +168,14 @@ footer {
 // подписка в футере
 
 .footer-flex {
-  // display: inline-flex;
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
 }
 
 .button-text {
-  // margin-bottom: 21px;
-  // display: block;
+  margin-bottom: 20px;
+  display: block;
   font-weight: $secondary-font-weight;
   font-size: 14px;
   line-height: 1.14;
@@ -121,9 +183,8 @@ footer {
 }
 
 .footer-input {
-  width: 358px;
   height: 50px;
-  // margin-right: 12px;
+
   font-weight: $primary-font-weight;
   font-size: 16px;
   line-height: 1.25;
@@ -137,12 +198,28 @@ footer {
   &:focus {
     color: $primary-white-color;
   }
+
+  @media screen and(max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 // кнопка подписаться
 
 .button-second {
-  // display: flex;
   font-family: inherit;
   min-width: 200px;
   border-radius: 4px;
@@ -164,6 +241,10 @@ footer {
   text-align: center;
   cursor: pointer;
 
+  @media screen and(min-width: 1200px) {
+    display: flex;
+  }
+
   &:hover,
   &:focus {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
@@ -175,7 +256,7 @@ footer {
 // Стили для иконки кнопки в футере
 
 .air-icon {
-  // margin-left: 10px;
+  margin-left: 10px;
   fill: $primary-white-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

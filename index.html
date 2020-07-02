@@ -224,7 +224,12 @@
               <div class="product-thumb">
                 <img
                   class="img"
-                  src="./images/img-9.jpg"
+                  srcset="
+                    ./images/img(5).jpg    1x,
+                    ./images/img@2x(5).jpg 2x,
+                    ./images/img@3x(5).jpg 3x
+                  "
+                  src="./images/img(5).jpg"
                   alt="Ноутбук"
                   width="370"
                   height="294"
@@ -237,7 +242,12 @@
               <div class="product-thumb">
                 <img
                   class="img"
-                  src="./images/box--20.jpg"
+                  srcset="
+                    ./images/box(6).jpg    1x,
+                    ./images/box@2x(6).jpg 2x,
+                    ./images/box@3x(6).jpg 3x
+                  "
+                  src="./images/box(6).jpg"
                   alt="мобильные приложения"
                   width="370"
                   height="294"
@@ -250,7 +260,12 @@
               <div class="product-thumb">
                 <img
                   class="img"
-                  src="./images/img-6.jpg"
+                  srcset="
+                    ./images/img(7).jpg    1x,
+                    ./images/img@2x(7).jpg 2x,
+                    ./images/img@3x(7).jpg 3x
+                  "
+                  src="./images/img(7).jpg"
                   alt="дизайнерские решения"
                   width="370"
                   height="294"
@@ -273,14 +288,19 @@
             <li class="item card-shadow">
               <img
                 class="card-images"
-                src="./images/img20.jpg"
+                srcset="
+                  ./images/img.jpg    1x,
+                  ./images/img@2x.jpg 2x,
+                  ./images/img@3x.jpg 3x
+                "
+                src="./images/img.jpg"
                 alt="фото дизайнера"
                 width="450"
               />
               <div class="person-box">
                 <h3 class="team-name">Николай Кучеренко</h3>
                 <p class="team-work">Product Designer</p>
-                <ul class="social list">
+                <ul class="social-set list">
                   <li class="item-social">
                     <a
                       href="https://www.instagram.com/"
@@ -297,7 +317,7 @@
                       href="https://twitter.com/"
                       class="link-social person"
                       aria-label="ссылка на твитер"
-                      ><svg class="icon-twit" width="20" height="16">
+                      ><svg class="icon-twit" width="20" height="20">
                         <use href="./images/sprite.svg#twitter1"></use>
                       </svg>
                     </a>
@@ -332,14 +352,19 @@
             <li class="item card-shadow">
               <img
                 class="card-images"
-                src="./images/img21.jpg"
+                srcset="
+                  ./images/img(1).jpg    1x,
+                  ./images/img@2x(1).jpg 2x,
+                  ./images/img@3x(1).jpg 3x
+                "
+                src="./images/img(1).jpg"
                 alt="фото разработчика"
                 width="450"
               />
               <div class="person-box">
                 <h3 class="team-name">Ольга Иванова</h3>
                 <p class="team-work">Frontend Developer</p>
-                <ul class="social list">
+                <ul class="social-set list">
                   <li class="item-social">
                     <a
                       href="https://www.instagram.com/"
@@ -356,7 +381,7 @@
                       href="https://twitter.com/"
                       class="link-social person"
                       aria-label="ссылка на твитер"
-                      ><svg class="icon-twit" width="20" height="16">
+                      ><svg class="icon-twit" width="20" height="20">
                         <use href="./images/sprite.svg#twitter1"></use>
                       </svg>
                     </a>
@@ -390,14 +415,19 @@
             <li class="item card-shadow">
               <img
                 class="card-images"
-                src="./images/img22.jpg"
+                srcset="
+                  ./images/img3.jpg    1x,
+                  ./images/img@2x2.jpg 2x,
+                  ./images/img@3x3.jpg 3x
+                "
+                src="./images/img3.jpg"
                 alt="маркетолог"
                 width="450"
               />
               <div class="person-box">
                 <h3 class="team-name">Андрей Шевченко</h3>
                 <p class="team-work">Marketing</p>
-                <ul class="social list">
+                <ul class="social-set list">
                   <li class="item-social">
                     <a
                       href="https://www.instagram.com/"
@@ -414,7 +444,7 @@
                       href="https://twitter.com/"
                       class="link-social person"
                       aria-label="ссылка на твитер"
-                      ><svg class="icon-twit" width="20" height="16">
+                      ><svg class="icon-twit" width="20" height="20">
                         <use href="./images/sprite.svg#twitter1"></use>
                       </svg>
                     </a>
@@ -448,14 +478,19 @@
             <li class="item card-shadow">
               <img
                 class="card-images"
-                src="./images/img23.jpg"
+                srcset="
+                  ./images/img4.jpg    1x,
+                  ./images/img@2x4.jpg 2x,
+                  ./images/img@3x4.jpg 3x
+                "
+                src="./images/img4.jpg"
                 alt="дизайнер юа"
                 width="450"
               />
               <div class="person-box">
                 <h3 class="team-name">Иван Николаев</h3>
                 <p class="team-work">Marketing</p>
-                <ul class="social list">
+                <ul class="social-set list">
                   <li class="item-social">
                     <a
                       href="https://www.instagram.com/"
@@ -472,7 +507,7 @@
                       href="https://twitter.com/"
                       class="link-social person"
                       aria-label="ссылка на твитер"
-                      ><svg class="icon-twit" width="20" height="16">
+                      ><svg class="icon-twit" width="20" height="20">
                         <use href="./images/sprite.svg#twitter1"></use>
                       </svg>
                     </a>
@@ -561,76 +596,80 @@
 
     <footer>
       <div class="box-footer container">
-        <div class="adress-footer">
-          <div class="logo-title">
-            <a href="./index.html" class="logo-footer"
-              ><span>Web </span>Studio</a
-            >
+        <div class="footer-tablet">
+          <div class="adress-footer">
+            <div class="logo-title">
+              <a href="./index.html" class="logo-footer"
+                ><span>Web </span>Studio</a
+              >
+            </div>
+            <address class="contacts">
+              <ul class="list adress-down">
+                <li class="item">
+                  <p class="contacts-text">г. Киев, пр-т Леси Украинки, 26</p>
+                </li>
+                <li class="item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="contacts-link footer"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="tel:380991111111" class="tell-link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
           </div>
-          <address class="contacts">
-            <ul class="list">
-              <li>
-                <p class="contacts-text">г. Киев, пр-т Леси Украинки, 26</p>
-              </li>
-              <li>
-                <a href="mailto:info@devstudio.com" class="contacts-link footer"
-                  >info@devstudio.com</a
+
+          <div class="footer-social">
+            <b class="footer-text">присоединяйтесь</b>
+            <ul class="social list">
+              <li class="item">
+                <a
+                  href="https://www.instagram.com/"
+                  class="link-social"
+                  aria-label="ссылка на инстаграм"
                 >
+                  <svg class="icon-insta" width="20" height="20">
+                    <use href="./images/sprite.svg#instagram2"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="tel:380991111111" class="tell-link"
-                  >+38 099 111 11 11</a
-                >
+              <li class="item">
+                <a
+                  href="https://twitter.com/"
+                  class="link-social"
+                  aria-label="ссылка на твитер"
+                  ><svg class="icon-twit" width="20" height="20">
+                    <use href="./images/sprite.svg#twitter1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a
+                  href="https://www.facebook.com/"
+                  class="link-social"
+                  aria-label="ссылка на фейсбук"
+                  ><svg class="icon-facebook" width="20" height="20">
+                    <use href="./images/sprite.svg#facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a
+                  href="https://www.linkedin.com/"
+                  class="link-social"
+                  aria-label="ссылка на линкидин"
+                  ><svg class="icon-linkidn" width="20" height="20">
+                    <use href="./images/sprite.svg#linkedin1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="footer-social">
-          <b class="footer-text">присоединяйтесь</b>
-          <ul class="social list">
-            <li class="item">
-              <a
-                href="https://www.instagram.com/"
-                class="link-social"
-                aria-label="ссылка на инстаграм"
-              >
-                <svg class="icon-insta" width="20" height="20">
-                  <use href="./images/sprite.svg#instagram2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a
-                href="https://twitter.com/"
-                class="link-social"
-                aria-label="ссылка на твитер"
-                ><svg class="icon-twit" width="20" height="16">
-                  <use href="./images/sprite.svg#twitter1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a
-                href="https://www.facebook.com/"
-                class="link-social"
-                aria-label="ссылка на фейсбук"
-                ><svg class="icon-facebook" width="20" height="20">
-                  <use href="./images/sprite.svg#facebook1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a
-                href="https://www.linkedin.com/"
-                class="link-social"
-                aria-label="ссылка на линкидин"
-                ><svg class="icon-linkidn" width="20" height="20">
-                  <use href="./images/sprite.svg#linkedin1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="box-button">
