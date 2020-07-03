@@ -9,7 +9,6 @@
   & .team-title {
     margin-top: 0;
     margin-bottom: 30px;
-    // margin-bottom: 50px;
 
     font-weight: $secondary-font-weight;
     font-size: 36px;
@@ -25,6 +24,7 @@
 
 .list.workers {
   display: flex;
+
   text-align: center;
   flex-wrap: wrap;
 
@@ -37,6 +37,7 @@
 
 .link-social.person {
   display: flex;
+
   align-items: center;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -97,14 +98,17 @@
 
 .list .social-set {
   display: flex;
+
   margin-bottom: 0;
   justify-content: center;
 }
 
 .item-social {
   display: flex;
-  align-items: center;
+
   margin-right: 10px;
+
+  align-items: center;
 
   &:last-child {
     margin-right: 0;

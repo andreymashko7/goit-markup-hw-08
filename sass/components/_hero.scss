@@ -5,19 +5,40 @@
   margin-left: auto;
   margin-right: auto;
 
-  // height: 600px;
-  // max-width: 480px;
-
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url('../images/header1.jpg');
+    url('../images/Header-img@1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   text-align: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url('../images/Header-img@2x.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3),
+  screen and (min-resolution: 288dpi),
+  screen and (min-resolution: 3dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url('../images/Header-img@3x.jpg');
+  }
 }
 
 // Заголовок для героя
@@ -60,7 +81,6 @@
 // Правило для кнопки в блоке Герой
 
 .hero-button {
-  // display: inline-block;
   padding: 10px 32px;
 
   // min-width: 200px;

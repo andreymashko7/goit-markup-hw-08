@@ -1,8 +1,8 @@
 // Логотип компании
 
 .logo {
-  // display: inline-flex;
   color: #000000;
+
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: $secondary-font-weight;
@@ -27,6 +27,7 @@
 
 .main-nav {
   display: flex;
+
   align-items: center;
   justify-content: space-between;
 
@@ -45,6 +46,7 @@
 
 .main-nav .menu-container {
   background-color: #fff;
+
   z-index: 2;
   text-align: center;
   font-size: 20px;
@@ -55,13 +57,16 @@
   }
 
   @media screen and (max-width: 767px) {
+    display: none;
+
     padding-top: 60px;
     padding-bottom: 60px;
-    display: none;
+
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 4px 8px rgba(0, 0, 0, 0.04);
   }
@@ -81,6 +86,7 @@
 
   @media screen and(min-width: 768px) {
     margin-right: 50px;
+
     text-align: center;
     justify-content: center;
 
@@ -107,7 +113,6 @@
 
 .site-nav {
   @media screen and (min-width: 768px) {
-    // margin-left: 81px;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -149,17 +154,18 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+
     flex-wrap: wrap;
-    // margin-left: 84px;
     font-size: 12px;
     line-height: 1.17;
-    display: block;
   }
 
   @media screen and (min-width: 1200px) {
+    margin-left: 305px;
+
     font-size: 14px;
     line-height: 1.14;
-    margin-left: 305px;
   }
 }
 
@@ -219,7 +225,9 @@
 
 .link.current::after {
   content: '';
+
   display: block;
+
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -239,6 +247,7 @@
 .icon-mail {
   width: 16px;
   height: 11px;
+
   margin-right: 10px;
 
   fill: currentColor;
@@ -271,8 +280,10 @@
 
 .menu-button {
   display: inline-flex;
+
   margin: 0;
   padding: 0;
+
   border: none;
   background-color: transparent;
 

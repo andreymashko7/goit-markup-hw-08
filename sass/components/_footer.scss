@@ -13,8 +13,6 @@ footer {
 // Логотип в футере
 
 .logo-footer {
-  // display: inline-block;
-  // margin-bottom: 10px;
   color: $primary-white-color;
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -41,6 +39,7 @@ footer {
 .footer-tablet {
   @media screen and(min-width: 768px) {
     display: flex;
+
     justify-content: space-around;
     align-items: baseline;
     margin-bottom: 60px;
@@ -83,13 +82,8 @@ footer {
     justify-content: space-between;
   }
 
-  // padding-top: 48px;
-  // padding-bottom: 28px;
-
   .contacts .contacts-text {
-    // display: inline-block;
     margin: 0;
-    // margin-bottom: 9px;
 
     font-style: normal;
     font-weight: $primary-font-weight;
@@ -100,8 +94,6 @@ footer {
 
 .contacts .contacts-link,
 .contacts .tell-link {
-  // display: inline-block;
-
   color: rgba(255, 255, 255, 0.6);
 
   font-style: normal;
@@ -121,7 +113,6 @@ footer {
 
 .social.list {
   display: flex;
-  // justify-content: center;
 
   @media screen and(max-width: 767px) {
     justify-content: center;
@@ -139,7 +130,6 @@ footer {
 
 .link-social {
   display: flex;
-  // display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -176,6 +166,7 @@ footer {
 .button-text {
   margin-bottom: 20px;
   display: block;
+
   font-weight: $secondary-font-weight;
   font-size: 14px;
   line-height: 1.14;
@@ -220,10 +211,12 @@ footer {
 // кнопка подписаться
 
 .button-second {
+  padding: 10px 29px;
+
   font-family: inherit;
   min-width: 200px;
   border-radius: 4px;
-  padding: 10px 29px;
+
   border: 0;
 
   color: $primary-white-color;

@@ -7,7 +7,6 @@
   & .clients-title {
     margin-top: 0;
     margin-bottom: 30px;
-    // margin-bottom: 50px;
 
     font-weight: $secondary-font-weight;
     font-size: 36px;
@@ -74,15 +73,11 @@
   @media screen and(min-width: 1200px) {
     width: calc((100% - 5 * 30px) / 6);
   }
-
-  &:last-child {
-    // margin-right: 0;
-  }
 }
 
 .company-logo {
   display: flex;
-  // display: inline-flex;
+
   height: 90px;
 
   fill: #afb1b8;
